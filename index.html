@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía Completa EVALUATEC 2025</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #4e73df;
+            --secondary: #1cc88a;
+            --dark: #2c3e50;
+            --light: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            padding-top: 70px;
+            background-color: #f5f7fa;
+        }
+
+        .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 100px 0;
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            position: relative;
+            margin-bottom: 40px;
+            font-weight: 700;
+        }
+
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: var(--primary);
+        }
+
+        .topic-card {
+            transition: all 0.3s ease;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            border: none;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .topic-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+
+        .topic-card .card-header {
+            font-weight: 600;
+            font-size: 1.2rem;
+            border-bottom: none;
+        }
+
+        .subtopic-item {
+            border-left: 3px solid var(--primary);
+            padding-left: 15px;
+            margin-bottom: 10px;
+            transition: all 0.2s;
+        }
+
+        .subtopic-item:hover {
+            background-color: rgba(78, 115, 223, 0.05);
+            transform: translateX(5px);
+        }
+
+        .priority-badge {
+            font-size: 0.8rem;
+            padding: 5px 10px;
+            border-radius: 20px;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .timeline:before {
+            content: '';
+            position: absolute;
+            left: 10px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item:before {
+            content: '';
+            position: absolute;
+            left: -30px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: white;
+            border: 3px solid var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 70px 0;
+            }
+            
+            .hero h1 {
+                font-size: 2.2rem;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-brain me-2"></i>EVALUATEC 2025
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#matematicas">Matemáticas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#razonamiento">Razonamiento</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#logica">Lógica</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cronograma">Cronograma</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold mb-4">GUÍA COMPLETA EVALUATEC 2025</h1>
+            <p class="lead mb-4">Todo lo que necesitas saber para dominar el examen, organizado de fácil a difícil</p>
+            <a href="#matematicas" class="btn btn-light btn-lg px-4">Comenzar a Estudiar</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Matemáticas Section -->
+        <section id="matematicas" class="py-5 fade-in">
+            <h2 class="text-center section-title">
+                <i class="fas fa-square-root-alt me-2"></i>Matemáticas Básicas a Avanzadas
+            </h2>
+            
+            <div class="row">
+                <!-- Aritmética -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card card">
+                        <div class="card-header bg-primary text-white">
+                            <i class="fas fa-calculator me-2"></i>Aritmética Básica (PRIMERO)
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted">Fundamentos que DEBES dominar antes de continuar</p>
+                            <div class="subtopic-item">
+                                <strong>Ley de los signos</strong>
+                                <span class="badge bg-primary priority-badge ms-2">Prioridad 1</span>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Jerarquía de operaciones (PEMDAS)</strong>
+                                <span class="badge bg-primary priority-badge ms-2">Prioridad 1</span>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>MCM y MCD</strong>
+                                <span class="badge bg-primary priority-badge ms-2">Prioridad 1</span>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Fracciones y decimales</strong>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Notación científica</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Álgebra -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card card">
+                        <div class="card-header bg-success text-white">
+                            <i class="fas fa-x me-2"></i>Álgebra Elemental (SEGUNDO)
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted">Base para ecuaciones y factorización</p>
+                            <div class="subtopic-item">
+                                <strong>Expresiones algebraicas</strong>
+                                <span class="badge bg-primary priority-badge ms-2">Prioridad 2</span>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Leyes de exponentes</strong>
+                                <span class="badge bg-primary priority-badge ms-2">Prioridad 2</span>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Operaciones con polinomios</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Productos Notables -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card card">
+                        <div class="card-header bg-info text-white">
+                            <i class="fas fa-cube me-2"></i>Productos Notables (TERCERO)
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted">Simplificación de expresiones</p>
+                            <div class="subtopic-item">
+                                <strong>Binomio al cuadrado</strong>
+                                <span class="badge bg-primary priority-badge ms-2">Prioridad 2</span>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Diferencia de cuadrados</strong>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Factor común</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Ecuaciones -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card card">
+                        <div class="card-header bg-warning text-dark">
+                            <i class="fas fa-equals me-2"></i>Ecuaciones (CUARTO)
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted">El corazón del examen</p>
+                            <div class="subtopic-item">
+                                <strong>Ecuaciones de primer grado</strong>
+                                <span class="badge bg-danger priority-badge ms-2">Prioridad Máxima</span>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Ecuaciones cuadráticas</strong>
+                                <span class="badge bg-danger priority-badge ms-2">Prioridad Máxima</span>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Sistemas de ecuaciones</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Geometría -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card card">
+                        <div class="card-header bg-danger text-white">
+                            <i class="fas fa-shapes me-2"></i>Geometría Analítica (QUINTO)
+                        </div>
+                        <div class="card-body">
+                            <p class="text-muted">Menos frecuente pero importante</p>
+                            <div class="subtopic-item">
+                                <strong>Ecuación de la recta</strong>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Circunferencia</strong>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Límites (conceptos básicos)</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Razonamiento Matemático -->
+        <section id="razonamiento" class="py-5 bg-light fade-in">
+            <div class="container">
+                <h2 class="text-center section-title">
+                    <i class="fas fa-chess me-2"></i>Razonamiento Matemático
+                </h2>
+                
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="topic-card card">
+                            <div class="card-header bg-purple text-white">
+                                <i class="fas fa-percentage me-2"></i>Problemas con Números Racionales
+                            </div>
+                            <div class="card-body">
+                                <div class="subtopic-item">
+                                    <strong>Regla de tres (directa e inversa)</strong>
+                                    <span class="badge bg-primary priority-badge ms-2">Prioridad 3</span>
+                                </div>
+                                <div class="subtopic-item">
+                                    <strong>Porcentajes</strong>
+                                </div>
+                                <div class="subtopic-item">
+                                    <strong>Proporciones</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="topic-card card">
+                            <div class="card-header bg-teal text-white">
+                                <i class="fas fa-project-diagram me-2"></i>Lógica de Conjuntos
+                            </div>
+                            <div class="card-body">
+                                <div class="subtopic-item">
+                                    <strong>Diagramas de Venn</strong>
+                                </div>
+                                <div class="subtopic-item">
+                                    <strong>Operaciones entre conjuntos</strong>
+                                </div>
+                                <div class="subtopic-item">
+                                    <strong>Problemas de aplicación</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lógica Matemática -->
+        <section id="logica" class="py-5 fade-in">
+            <div class="container">
+                <h2 class="text-center section-title">
+                    <i class="fas fa-robot me-2"></i>Lógica Matemática (LO MÁS DIFÍCIL)
+                </h2>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="topic-card card">
+                            <div class="card-header bg-dark text-white">
+                                <i class="fas fa-code me-2"></i>Cálculo Proposicional
+                            </div>
+                            <div class="card-body">
+                                <div class="subtopic-item">
+                                    <strong>Tablas de verdad</strong>
+                                    <span class="badge bg-danger priority-badge ms-2">Prioridad 4</span>
+                                </div>
+                                <div class="subtopic-item">
+                                    <strong>Conectivos lógicos (∧, ∨, ¬)</strong>
+                                </div>
+                                <div class="subtopic-item">
+                                    <strong>Tautologías y contradicciones</strong>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="topic-card card mt-4">
+                            <div class="card-header bg-secondary text-white">
+                                <i class="fas fa-infinity me-2"></i>Cuantificadores
+                            </div>
+                            <div class="card-body">
+                                <div class="subtopic-item">
+                                    <strong>Universal (∀) y Existencial (∃)</strong>
+                                    <span class="badge bg-danger priority-badge ms-2">Dificultad Alta</span>
+                                </div>
+                                <div class="subtopic-item">
+                                    <strong>Negación de cuantificadores</strong>
+                                </div>
+                                <div class="subtopic-item">
+                                    <strong>Problemas de aplicación</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cronograma -->
+        <section id="cronograma" class="py-5 bg-light fade-in">
+            <div class="container">
+                <h2 class="text-center section-title">
+                    <i class="far fa-calendar-alt me-2"></i>Cronograma de Estudio (3 Semanas)
+                </h2>
+                
+                <div class="timeline">
+                    <!-- Semana 1 -->
+                    <div class="timeline-item">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-primary text-white">
+                                <strong>Semana 1: Fundamentos</strong>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Aritmética básica (Ley de signos, PEMDAS)</li>
+                                    <li>Álgebra elemental (Expresiones, exponentes)</li>
+                                    <li>Productos notables (Binomios, factorización)</li>
+                                </ul>
+                                <span class="badge bg-primary">Dedicación: 8 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semana 2 -->
+                    <div class="timeline-item">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-success text-white">
+                                <strong>Semana 2: Aplicación</strong>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Ecuaciones (Lineales, cuadráticas, sistemas)</li>
+                                    <li>Razonamiento matemático (Regla de 3, conjuntos)</li>
+                                    <li>Geometría básica (Rectas, circunferencias)</li>
+                                </ul>
+                                <span class="badge bg-success">Dedicación: 10 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Semana 3 -->
+                    <div class="timeline-item">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-danger text-white">
+                                <strong>Semana 3: Lógica</strong>
+                            </div>
+                            <div class="card-body">
+                                <ul>
+                                    <li>Cálculo proposicional (Tablas de verdad)</li>
+                                    <li>Cuantificadores (Universal, existencial)</li>
+                                    <li>Repaso general y simulacro</li>
+                                </ul>
+                                <span class="badge bg-danger">Dedicación: 12 horas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p class="mb-0">© 2025 Guía EVALUATEC Completa | <i class="fas fa-fire text-danger"></i> Hecho para estudiantes chingones</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Simple animation trigger
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.fade-in');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                observer.observe(section);
+            });
+        });
+    </script>
+</body>
+</html>
