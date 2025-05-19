@@ -3,19 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guía Completa EVALUATEC 2025</title>
+    <title>Guía EVALUATEC 2025</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #4e73df;
             --secondary: #1cc88a;
             --dark: #2c3e50;
             --light: #f8f9fa;
+            --purple: #6f42c1;
+            --teal: #20c997;
         }
 
         body {
@@ -141,6 +143,21 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        /* Colores personalizados */
+        .bg-purple {
+            background-color: #6f42c1 !important;  /* Morado tecnológico */
+        }
+
+        .bg-teal {
+            background-color: #20c997 !important;  /* Verde azulado fresco */
+        }
+
+        /* Asegura que el texto sea blanco */
+        .bg-purple.text-white, 
+        .bg-teal.text-white, 
+        .bg-dark.text-white {
+            color: white !important;
+        }
     </style>
 </head>
 <body>
@@ -186,21 +203,17 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="topic-card card">
                         <div class="card-header bg-primary text-white">
-                            <i class="fas fa-calculator me-2"></i>Aritmética Básica (PRIMERO)
+                            <i class="fas fa-calculator me-2"></i>Aritmética Básica
                         </div>
                         <div class="card-body">
-                            <p class="text-muted">Fundamentos que DEBES dominar antes de continuar</p>
                             <div class="subtopic-item">
                                 <strong>Ley de los signos</strong>
-                                <span class="badge bg-primary priority-badge ms-2">Prioridad 1</span>
                             </div>
                             <div class="subtopic-item">
                                 <strong>Jerarquía de operaciones (PEMDAS)</strong>
-                                <span class="badge bg-primary priority-badge ms-2">Prioridad 1</span>
                             </div>
                             <div class="subtopic-item">
                                 <strong>MCM y MCD</strong>
-                                <span class="badge bg-primary priority-badge ms-2">Prioridad 1</span>
                             </div>
                             <div class="subtopic-item">
                                 <strong>Fracciones y decimales</strong>
@@ -216,20 +229,23 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="topic-card card">
                         <div class="card-header bg-success text-white">
-                            <i class="fas fa-x me-2"></i>Álgebra Elemental (SEGUNDO)
+                            <i class="fas fa-x me-2"></i>Álgebra Elemental
                         </div>
                         <div class="card-body">
-                            <p class="text-muted">Base para ecuaciones y factorización</p>
                             <div class="subtopic-item">
                                 <strong>Expresiones algebraicas</strong>
-                                <span class="badge bg-primary priority-badge ms-2">Prioridad 2</span>
                             </div>
                             <div class="subtopic-item">
                                 <strong>Leyes de exponentes</strong>
-                                <span class="badge bg-primary priority-badge ms-2">Prioridad 2</span>
                             </div>
                             <div class="subtopic-item">
                                 <strong>Operaciones con polinomios</strong>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Lenguaje algebraico</strong>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Expresiones fraccionarias</strong>
                             </div>
                         </div>
                     </div>
@@ -239,19 +255,23 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="topic-card card">
                         <div class="card-header bg-info text-white">
-                            <i class="fas fa-cube me-2"></i>Productos Notables (TERCERO)
+                            <i class="fas fa-cube me-2"></i>Productos Notables
                         </div>
                         <div class="card-body">
-                            <p class="text-muted">Simplificación de expresiones</p>
                             <div class="subtopic-item">
                                 <strong>Binomio al cuadrado</strong>
-                                <span class="badge bg-primary priority-badge ms-2">Prioridad 2</span>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Binomio al cubo</strong>
                             </div>
                             <div class="subtopic-item">
                                 <strong>Diferencia de cuadrados</strong>
                             </div>
                             <div class="subtopic-item">
                                 <strong>Factor común</strong>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Trinomio cuadrado perfecto</strong>
                             </div>
                         </div>
                     </div>
@@ -261,20 +281,23 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="topic-card card">
                         <div class="card-header bg-warning text-dark">
-                            <i class="fas fa-equals me-2"></i>Ecuaciones (CUARTO)
+                            <i class="fas fa-equals me-2"></i>Ecuaciones
                         </div>
                         <div class="card-body">
-                            <p class="text-muted">El corazón del examen</p>
                             <div class="subtopic-item">
                                 <strong>Ecuaciones de primer grado</strong>
-                                <span class="badge bg-danger priority-badge ms-2">Prioridad Máxima</span>
                             </div>
                             <div class="subtopic-item">
                                 <strong>Ecuaciones cuadráticas</strong>
-                                <span class="badge bg-danger priority-badge ms-2">Prioridad Máxima</span>
                             </div>
                             <div class="subtopic-item">
-                                <strong>Sistemas de ecuaciones</strong>
+                                <strong>Sistemas de ecuaciones lineales</strong>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Ecuaciones con fracciones</strong>
+                            </div>
+                            <div class="subtopic-item">
+                                <strong>Problemas de aplicación</strong>
                             </div>
                         </div>
                     </div>
@@ -284,18 +307,47 @@
                 <div class="col-md-6 col-lg-4">
                     <div class="topic-card card">
                         <div class="card-header bg-danger text-white">
-                            <i class="fas fa-shapes me-2"></i>Geometría Analítica (QUINTO)
+                            <i class="fas fa-shapes me-2"></i>Geometría Analítica
                         </div>
                         <div class="card-body">
-                            <p class="text-muted">Menos frecuente pero importante</p>
                             <div class="subtopic-item">
                                 <strong>Ecuación de la recta</strong>
+                                <ul class="mt-2">
+                                    <li><strong>Distancia entre puntos</strong></li>
+                                    <li><strong>Pendiente</strong></li>
+                                    <li><strong>Formas de la ecuación</strong>: Punto-pendiente, general.</li>
+                                </ul>
                             </div>
                             <div class="subtopic-item">
                                 <strong>Circunferencia</strong>
+                                <ul class="mt-2">
+                                    <li><strong>Ecuación canónica</strong></li>
+                                    <li><strong>Centro y radio</strong>: Identificar en ecuaciones dadas.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Cálculo -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="topic-card card">
+                         <div class="card-header bg-purple text-white">
+                            <i class="fas fa-infinity me-2"></i>Cálculo
+                        </div>
+                        <div class="card-body">
+                            <div class="subtopic-item">
+                                <strong>Límites</strong>
+                                <ul class="mt-2">
+                                    <li><strong>Teoremas básicos</strong>: Suma, resta, multiplicación.</li>
+                                </ul>
                             </div>
                             <div class="subtopic-item">
-                                <strong>Límites (conceptos básicos)</strong>
+                                <strong>Derivadas</strong>
+                                <ul class="mt-2">
+                                    <li><strong>Reglas básicas</strong>: Potencia, suma, resta.</li>
+                                    <li><strong>Aplicaciones</strong>: Velocidad, aceleración.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -313,19 +365,21 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="topic-card card">
-                            <div class="card-header bg-purple text-white">
+                            <div class="card-header bg-dark text-white">
                                 <i class="fas fa-percentage me-2"></i>Problemas con Números Racionales
                             </div>
                             <div class="card-body">
                                 <div class="subtopic-item">
                                     <strong>Regla de tres (directa e inversa)</strong>
-                                    <span class="badge bg-primary priority-badge ms-2">Prioridad 3</span>
                                 </div>
                                 <div class="subtopic-item">
                                     <strong>Porcentajes</strong>
                                 </div>
                                 <div class="subtopic-item">
                                     <strong>Proporciones</strong>
+                                </div>
+                                <div class="subtopic-item">
+                                    <strong>Reparto proporcional</strong>
                                 </div>
                             </div>
                         </div>
@@ -344,7 +398,7 @@
                                     <strong>Operaciones entre conjuntos</strong>
                                 </div>
                                 <div class="subtopic-item">
-                                    <strong>Problemas de aplicación</strong>
+                                    <strong>Conjunto potencia</strong>
                                 </div>
                             </div>
                         </div>
@@ -357,7 +411,7 @@
         <section id="logica" class="py-5 fade-in">
             <div class="container">
                 <h2 class="text-center section-title">
-                    <i class="fas fa-robot me-2"></i>Lógica Matemática (LO MÁS DIFÍCIL)
+                    <i class="fas fa-robot me-2"></i>Lógica Matemática
                 </h2>
                 
                 <div class="row justify-content-center">
@@ -369,10 +423,9 @@
                             <div class="card-body">
                                 <div class="subtopic-item">
                                     <strong>Tablas de verdad</strong>
-                                    <span class="badge bg-danger priority-badge ms-2">Prioridad 4</span>
                                 </div>
                                 <div class="subtopic-item">
-                                    <strong>Conectivos lógicos (∧, ∨, ¬)</strong>
+                                    <strong>Conectivos lógicos (∧, ∨, ¬, →, ↔)</strong>
                                 </div>
                                 <div class="subtopic-item">
                                     <strong>Tautologías y contradicciones</strong>
@@ -382,18 +435,14 @@
                         
                         <div class="topic-card card mt-4">
                             <div class="card-header bg-secondary text-white">
-                                <i class="fas fa-infinity me-2"></i>Cuantificadores
+                                <i class="fas fa-infinity me-2"></i>Cálculo de Predicados
                             </div>
                             <div class="card-body">
                                 <div class="subtopic-item">
-                                    <strong>Universal (∀) y Existencial (∃)</strong>
-                                    <span class="badge bg-danger priority-badge ms-2">Dificultad Alta</span>
+                                    <strong>Cuantificadores (∀, ∃)</strong>
                                 </div>
                                 <div class="subtopic-item">
                                     <strong>Negación de cuantificadores</strong>
-                                </div>
-                                <div class="subtopic-item">
-                                    <strong>Problemas de aplicación</strong>
                                 </div>
                             </div>
                         </div>
@@ -418,11 +467,11 @@
                             </div>
                             <div class="card-body">
                                 <ul>
-                                    <li>Aritmética básica (Ley de signos, PEMDAS)</li>
+                                    <li>Aritmética básica (Ley de signos, MCM, MCD)</li>
                                     <li>Álgebra elemental (Expresiones, exponentes)</li>
                                     <li>Productos notables (Binomios, factorización)</li>
                                 </ul>
-                                <span class="badge bg-primary">Dedicación: 8 horas</span>
+                                <span class="badge bg-primary">Dedicación: 10 horas</span>
                             </div>
                         </div>
                     </div>
@@ -436,10 +485,10 @@
                             <div class="card-body">
                                 <ul>
                                     <li>Ecuaciones (Lineales, cuadráticas, sistemas)</li>
-                                    <li>Razonamiento matemático (Regla de 3, conjuntos)</li>
-                                    <li>Geometría básica (Rectas, circunferencias)</li>
+                                    <li>Geometría analítica (Rectas, circunferencias)</li>
+                                    <li>Límites y derivadas básicas</li>
                                 </ul>
-                                <span class="badge bg-success">Dedicación: 10 horas</span>
+                                <span class="badge bg-success">Dedicación: 12 horas</span>
                             </div>
                         </div>
                     </div>
@@ -452,11 +501,11 @@
                             </div>
                             <div class="card-body">
                                 <ul>
-                                    <li>Cálculo proposicional (Tablas de verdad)</li>
-                                    <li>Cuantificadores (Universal, existencial)</li>
-                                    <li>Repaso general y simulacro</li>
+                                    <li>Tablas de verdad y conectivos lógicos</li>
+                                    <li>Cuantificadores y negación</li>
+                                    <li>Simulacro final con tiempo</li>
                                 </ul>
-                                <span class="badge bg-danger">Dedicación: 12 horas</span>
+                                <span class="badge bg-danger">Dedicación: 14 horas</span>
                             </div>
                         </div>
                     </div>
